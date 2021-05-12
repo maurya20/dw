@@ -7,16 +7,14 @@ import LinearProgress from "@material-ui/core/LinearProgress";
 import SearchIcon from "@material-ui/icons/Search";
 import { Link } from "react-router-dom";
 import {
-  Box,
   Container,
   IconButton,
   InputBase,
   Typography,
 } from "@material-ui/core";
 import { useProductsStyles } from "./styles/ProductStyles";
-import { FormatAlignCenter } from "@material-ui/icons";
 import Pagination from "react-js-pagination";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addToCart } from "../redux/actions/AuthActions";
 export const Products = () => {
   const dispatch = useDispatch();
@@ -28,13 +26,13 @@ export const Products = () => {
   const [input, setInput] = React.useState("");
   const [activePage, setActivePage] = React.useState(1);
   //// for search by name
-  let filter2 = data.filter((x) => x.title == input);
-  if (input == "") {
+  let filter2 = data.filter((x) => x.title === input);
+  if (input === "") {
     filter2 = data;
   }
   //// for search by category
-  let filter1 = filter2.filter((cat) => cat.category == category);
-  if (category == "--Select--" || category == "") {
+  let filter1 = filter2.filter((cat) => cat.category === category);
+  if (category === "--Select--" || category === "") {
     filter1 = filter2;
   }
   const listing = filter1;

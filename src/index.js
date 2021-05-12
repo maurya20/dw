@@ -5,7 +5,7 @@ import App from "./App";
 import { createStore, compose, combineReducers, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 import { Provider } from "react-redux";
-import { cartReducer } from "./redux/reducers/cartReducer";
+import { cartReducer } from "./redux/reducers";
 /* MiddleWare: logger */
 
 const logger = (store) => {
