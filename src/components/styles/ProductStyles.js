@@ -12,9 +12,10 @@ export const useProductsStyles = makeStyles(() =>
       height: "370px",
       width: "300px",
       textAlign: "center",
-      border: "2px solid black",
-      borderRadius: "0 0 20px 20px",
+      // border: "2px solid black",
+      //borderRadius: "0 0 20px 20px",
       position: "relative",
+      marginBottom: "5px",
     },
     image: {
       width: "100%",
@@ -32,7 +33,7 @@ export const useProductsStyles = makeStyles(() =>
       backgroundColor: "rgb(2, 209, 47)",
       position: "absolute",
       bottom: 0,
-      borderRadius: "0 0 18px 18px",
+      // borderRadius: "0 0 18px 18px",
       left: 0,
       right: 0,
     },
@@ -45,8 +46,9 @@ export const useProductsStyles = makeStyles(() =>
     },
     search: {
       border: "1px solid gray",
-      borderRadius: "15px",
-      width: "250px",
+      borderRadius: "10px",
+      width: "235px",
+      height: "40px",
     },
   })
 );

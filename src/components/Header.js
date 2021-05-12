@@ -30,17 +30,7 @@ const Header = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-sm bg-info">
-        <b className="navbar-brand text-white" style={{ fontSize: "40px" }}>
-          DW
-        </b>
-
-        <ul className="navbar-nav">
-          <li className="nav-item">
-            <Link to="/" className="nav-link text-white">
-              <h5>Home</h5>
-            </Link>
-          </li>
-        </ul>
+        <h1 className="text-white">DW</h1>
         <div className="w-100">
           <Link
             className="float-right"

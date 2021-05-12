@@ -72,7 +72,7 @@ export const Products = () => {
       {loading && <LinearProgress />}
       <Container>
         <Grid container spacing={1} className={classes.wrapper}>
-          <Grid xs={6}>
+          <Grid xs={9}>
             <div className="form-group">
               <label>Choose Category: </label>
               <select
@@ -87,7 +87,7 @@ export const Products = () => {
               </select>
             </div>
           </Grid>
-          <Grid xs={6}>
+          <Grid xs={3}>
             <form className={classes.search}>
               <InputBase
                 className={classes.input}
